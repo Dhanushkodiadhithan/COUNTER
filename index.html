@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>COUNTER APP</title>
+	<link rel="stylesheet" type="text/css" href="./index.css">
+</head>
+<body>
+	<h2 align="center">COUNTER APP</h2>
+	<div class="container">
+	<div id="counter">
+		<p id="value">0</p>
+		<button id="ADD">ADD</button>
+		<button id="SUB">SUB</button>
+		<button id="RESET">RESET</button>
+	</div>
+	<script>
+		let val=0;
+		document.getElementById("ADD").onclick=function(){
+			val++;
+			document.getElementById("value").innerHTML=val;
+		}
+		document.getElementById("SUB").onclick=function(){
+			val--;
+			document.getElementById("value").innerHTML=val;
+		}
+		document.getElementById("RESET").onclick=function(){
+			val=0;
+			document.getElementById("value").innerHTML=val;
+		}
+	</script>
+</div>
+</body>
+</html>
